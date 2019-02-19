@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load static %}
+    <script src="{% static 'woqu/js/jQuery.js' %}"></script>
+    <script src="{% static 'woqu/js/rem.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'woqu/css/chat_page.css' %}">
+    <title>对话</title>
+</head>
+<body>
+    <header>
+        <div class="top_img">
+            <a class="return" href="{% url 'woquApp:interest' %}"><img src="{% static 'woqu/img/arrow.png' %}" alt=""></a>
+            <h4>Christ.Rrow</h4>
+        </div>
+    </header>
+    <section>
+        <div class="all_right">
+            <div class="right">
+                <div class="right_box">
+                    <span>·</span>&nbsp;Hi! What's up?man
+                </div>
+                <div class="time_box">
+                    3.25 11:54
+                </div>
+            </div>
+            <div class="img-box">
+                <div class="send_img">
+                    <img src="{% static 'woqu/img/imgimg.png' %}" alt="">
+                </div>
+                <ul class="jindutiao">
+                    <li><span></span></li>
+                    <li>72%</li>
+                </ul>
+            </div>
+        </div>
+        <div class="all_left">
+            <div class="left">
+                <ul>
+                    <li><img src="{% static 'woqu/img/user.png' %}" alt=""></li>
+                    <li>
+                        <span>·</span> 发送的还挺快。网速不错
+                    </li>
+                </ul>
+                <div>3.25 11:54</div>
+            </div>
+        </div>
+        <div class="all_right">
+            <div class="right">
+                <div class="right_box">
+                    &nbsp;
+                    <img src="{% static 'woqu/img/hah.png' %}" alt="" style="width: 2.1rem;height: 0.45rem;margin-top: 0.2rem">
+                </div>
+                <div class="time_box">
+                    3.25 11:54
+                </div>
+            </div>
+        </div>
+        <div class="all_left_video">
+            <div class="left_video">
+                <ul>
+                    <li><img src="{% static 'woqu/img/user.png' %}" alt=""></li>
+                    <li style="position: relative;"><img src="{% static 'woqu/img/bolang.png' %}" alt="" style="width: 100%;height: 50%;position: absolute;bottom: 0;"></li>
+                    <li>36" <span style="font-size: 0.05rem;color: #f5365f;">·</span></li>
+                </ul>
+                <div class="time_box" style="float: left;margin-left: 1.46rem">
+                    3.25 11:54
+                </div>
+            </div>
+        </div>
+        <div class="all_right">
+            <div class="right">
+                <div class="right_box">
+                    <span>·</span>&nbsp;http://www.tianmao.com.list
+                </div>
+                <div class="time_box">
+                    3.25 11:54
+                </div>
+            </div>
+            <div class="img-box" style="width: 1.67rem;height: 0.54rem">
+                <div class="send_img" style="width: 1.67rem;height: 0.54rem">
+                    <img src="{% static 'woqu/img/shuazi.png' %}" alt="" style="width: 100%;height: 100%">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <ul>
+            <li>+</li>
+            <li>
+                <input type="text" placeholder="说出您想要说的话">
+            </li>
+            <li><img src="{% static 'woqu/img/yuyin.png' %}" alt=""></li>
+        </ul>
+    </footer>
+</body>
+</html>
